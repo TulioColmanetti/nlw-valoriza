@@ -1,7 +1,14 @@
+import 'reflect-metadata';
 import express from 'express';
+
+// By default JS looks an index.js file inside the imported folder
+import './database';
 
 // @types/express
 const app = express();
+
+// http://localhost:3000
+app.listen(3000, () => console.log('Server is running'));
 
 /**
  * GET    => Search information
@@ -20,14 +27,3 @@ const app = express();
  *  "description": "teclado bom"
  * }
  */
-
-app.get('/test', (req, res) => {
-  return res.send('Olá NLW!');
-});
-
-app.post('/test-post', (req, res) => {
-  return res.send('Olá NLW! - POST');
-});
-
-// http://localhost:3000
-app.listen(3000, () => console.log('Server is running'));
