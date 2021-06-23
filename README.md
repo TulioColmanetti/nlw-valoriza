@@ -6,9 +6,9 @@ Application developed during NLW #Together - Node.js track
 
 - User register - it is not allowed:
 
-  [ ] register more than one user with the same e-mail
+  [x] register more than one user with the same e-mail
 
-  [ ] register user without e-mail
+  [x] register user without e-mail
 
 - Tag register - it is not allowed:
 
