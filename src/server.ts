@@ -1,11 +1,17 @@
 import 'reflect-metadata';
 import express from 'express';
 
+import { router } from './routes';
+
 // By default JS looks an index.js file inside the imported folder
 import './database';
 
 // @types/express
 const app = express();
+
+app.use(express.json());
+
+app.use(router);
 
 // http://localhost:3000
 app.listen(3000, () => console.log('Server is running'));
@@ -26,4 +32,8 @@ app.listen(3000, () => console.log('Server is running'));
  *  "name": "teclado",
  *  "description": "teclado bom"
  * }
+ */
+
+/**
+ * server <-> controller <-> service
  */
