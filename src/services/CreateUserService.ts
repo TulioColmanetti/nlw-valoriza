@@ -12,7 +12,7 @@ class CreateUserService {
     const usersRepository = getCustomRepository(UsersRepositories);
 
     if (!email) {
-      throw new Error('Incorrect email');
+      throw new Error('Incorrect email!');
     }
 
     const userAlreadyExists = await usersRepository.findOne({
@@ -20,7 +20,7 @@ class CreateUserService {
     });
 
     if (userAlreadyExists) {
-      throw new Error('User already exists');
+      throw new Error('User already exists!');
     }
 
     const user = usersRepository.create({
