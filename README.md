@@ -12,11 +12,11 @@ Application developed during NLW #Together - Node.js track
 
 - Tag register - it is not allowed:
 
-  [ ] register more than one tag with the same name
+  [x] register more than one tag with the same name
 
-  [ ] register tag without name
+  [x] register tag without name
 
-  [ ] the register by users that are not admins
+  [x] the register by users that are not admins
 
 - Compliments register:
 
