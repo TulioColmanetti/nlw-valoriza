@@ -1,4 +1,4 @@
-import { Request, response, Response } from 'express';
+import { Request, Response } from 'express';
 import { ListUserReceiveComplimentsService } from '../services/ListUserReceiveComplimentsService';
 
 class ListUserReceiveComplimentsController {
@@ -12,7 +12,7 @@ class ListUserReceiveComplimentsController {
       user_id
     );
 
-    return response.json(compliments);
+    return res.json(compliments);
   }
 }
 

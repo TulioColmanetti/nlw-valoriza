@@ -1,4 +1,4 @@
-import { Request, response, Response } from 'express';
+import { Request, Response } from 'express';
 import { ListUserSendComplimentsService } from '../services/ListUserSendComplimentsService';
 
 class ListUserSendComplimentsController {
@@ -9,7 +9,7 @@ class ListUserSendComplimentsController {
 
     const compliments = await listUserSendComplimentsService.execute(user_id);
 
-    return response.json(compliments);
+    return res.json(compliments);
   }
 }
 
