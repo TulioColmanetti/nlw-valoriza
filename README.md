@@ -1,6 +1,14 @@
 # nlw-valoriza
 
-Application developed during NLW #Together - Node.js track
+API developed during NLW #Together - Node.js track
+
+Languages and technologies used:
+
+- Node.js
+- Typescript
+- TypeORM
+- SQLite/PostgreSQL
+- JWT (JSON Web Token)
 
 ## Rules
 
