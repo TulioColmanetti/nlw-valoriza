@@ -20,8 +20,8 @@ Application developed during NLW #Together - Node.js track
 
 - Compliments register:
 
-  [ ] it is not allowed an user register a compliment to itself
+  [x] it is not allowed an user register a compliment to itself
 
-  [ ] it is not allowed to register compliments to invalid users
+  [x] it is not allowed to register compliments to invalid users
 
-  [ ] the user needs to be authenticated on the application
+  [x] the user needs to be authenticated on the application
